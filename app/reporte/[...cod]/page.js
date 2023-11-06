@@ -2,7 +2,7 @@ import ReportForm from "./formReport";
 
 async function postBucarInfos(tipo, cod){
     try{
-        const apiBucarInfos = await fetch(`http://localhost:8080/api/reportarTarefas/pegardados-${tipo}`, {
+        const apiBucarInfos = await fetch(`https://hutapi.aprendacomeduke.com.br/api/reportarTarefas/pegardados-${tipo}`, {
             method: 'POST',
             body: JSON.stringify({cod}),
             headers: { 'Content-Type': 'application/json',}

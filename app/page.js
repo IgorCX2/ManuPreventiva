@@ -4,7 +4,7 @@ import QrCodeImage from '../components/blocoReporte';
 
 async function postTarefa(maquina, tipo, tarefas){
     try{
-        const apiTarefas = await fetch(`http://localhost:8080/api/abrirTarefas/${tipo}`, {
+        const apiTarefas = await fetch(`https://hutapi.aprendacomeduke.com.br/api/abrirTarefas/${tipo}`, {
             method: 'POST',
             body: JSON.stringify({maquina, tipo, tarefas}),
             headers: { 'Content-Type': 'application/json',}

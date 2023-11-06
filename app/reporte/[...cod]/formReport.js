@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation'
 async function postSalvarInfos(tipo, dados, tempo){
     try{
-        const apiSalvarInfos = await fetch(`http://localhost:8080/api/reportarTarefas/reporte-${tipo}`, {
+        const apiSalvarInfos = await fetch(`https://hutapi.aprendacomeduke.com.br/api/reportarTarefas/reporte-${tipo}`, {
             method: 'POST',
             body: JSON.stringify({dados, tempo}),
             headers: { 'Content-Type': 'application/json',}
